@@ -11,7 +11,7 @@ before_install:
 script:
   - echo Writing from $(pwd)
   - mkdir out
-  - docker run -v $(pwd):/docs vpetersson/pandoc pandoc -V geometry:margin=1in -t latex -o out/cv2015.contract.pdf cv2015.contract.md
+  - docker run -v $(pwd):/docs vpetersson/pandoc /bin/sh -c "pandoc -V geometry:margin=1in -t latex -o out/cv2015.contract.pdf cv2015.contract.md"
 
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
