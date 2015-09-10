@@ -9,9 +9,13 @@ before_install:
   - docker pull vpetersson/pandoc
 
 script:
-  - mkdir out && docker run --name pandoc -v $(pwd):/docs --rm -i -t vpetersson/pandoc pandoc -V geometry:margin=1in -t latex -o out/cv2015.contract.pdf cv2015.contract.md
+  - echo Writing from $(pwd)
+  - mkdir out
+  - docker run -v $(pwd):/docs vpetersson/pandoc pandoc -V geometry:margin=1in -t latex -o out/cv2015.contract.pdf cv2015.contract.md
 
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
 
-secure: "s1TjCj4qIyaFYkepwOidZi27gqiereJgSoxiFVaNTLBYa0+plDEca4BLFyJeTmzoPAJdW2Ai1xfBnv93OgLlmNmXVWqvFlPAO4AcoIIeeL4S+s+aegNPUZMiQBq1CiDIKa+j8FTiBrIiDEB2vKIA5InG7A+Y09y29GIMa1KPI2OVh4Ab/g8apVZSziTCA1+j/AtCr8fESx/9KQl42czv6R5XG1+0RdODGYx9anG/yI3IISx7ZxiNUSEVlQdhoKq7cV68DYn9lzdpdppPb+lv0iI+PqJ9cGoU8up8usi4wlpJpSok5eNbq8fc6WbiL0r/dWLdLZ+SXaeQRxMvl22QQ2kaKt6ji4B+TjIYN2G4n2sndyrUSydEHTp0ZyIyj+NBRVXDrjZ59C9qTn46mKaA6AJQdWwOloGLkmZ4yx4va8quFB8BSZmj8pcqnpSc1pBDggC8k+Fq46784KHmHkd6imj6PLYfVIfSqOlAnS4D36o5iditvKVfTJMychqMs2LH934MM1kFi6jvbzGKJ5WGXz4EQY8+CJFyXSlOQ+nGSFaPuf6cbZPQHW9NluwUg1CwHjJglTZ3LIkOpd8Pj56tElvDkNyO849UqE+ntdQlM6WZ4vqSb8DKhsyw24cUdT+9Zw8S6ihbXEOzRZuCYphNa3z7YHAlydt3oU/qriuY1QA="
+env:
+  global:
+    - secure: "s1TjCj4qIyaFYkepwOidZi27gqiereJgSoxiFVaNTLBYa0+plDEca4BLFyJeTmzoPAJdW2Ai1xfBnv93OgLlmNmXVWqvFlPAO4AcoIIeeL4S+s+aegNPUZMiQBq1CiDIKa+j8FTiBrIiDEB2vKIA5InG7A+Y09y29GIMa1KPI2OVh4Ab/g8apVZSziTCA1+j/AtCr8fESx/9KQl42czv6R5XG1+0RdODGYx9anG/yI3IISx7ZxiNUSEVlQdhoKq7cV68DYn9lzdpdppPb+lv0iI+PqJ9cGoU8up8usi4wlpJpSok5eNbq8fc6WbiL0r/dWLdLZ+SXaeQRxMvl22QQ2kaKt6ji4B+TjIYN2G4n2sndyrUSydEHTp0ZyIyj+NBRVXDrjZ59C9qTn46mKaA6AJQdWwOloGLkmZ4yx4va8quFB8BSZmj8pcqnpSc1pBDggC8k+Fq46784KHmHkd6imj6PLYfVIfSqOlAnS4D36o5iditvKVfTJMychqMs2LH934MM1kFi6jvbzGKJ5WGXz4EQY8+CJFyXSlOQ+nGSFaPuf6cbZPQHW9NluwUg1CwHjJglTZ3LIkOpd8Pj56tElvDkNyO849UqE+ntdQlM6WZ4vqSb8DKhsyw24cUdT+9Zw8S6ihbXEOzRZuCYphNa3z7YHAlydt3oU/qriuY1QA="
