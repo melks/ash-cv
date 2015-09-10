@@ -1,0 +1,9 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull vpetersson/pandoc
+  - docker run --name pandoc -v $(pwd):/docs --rm -i -t vpetersson/pandoc pandoc -V geometry:margin=1in -t latex -o cv2015.contract.pdf cv2015.contract.md
+
