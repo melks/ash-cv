@@ -10,7 +10,6 @@ before_install:
 
 script:
   - echo Writing from $(pwd)
-  - mkdir out
   - make all
 
 after_success:

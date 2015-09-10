@@ -8,7 +8,7 @@ docker_cmd = docker run -v $(pwd):/docs vpetersson/pandoc /bin/sh -c
 all: outdir pdf html doc
 
 outdir:
-	mkdir out
+	mkdir -p out
 
 pdf: outdir $(cv_markdown)
 	$(docker_cmd) "pandoc -V geometry:margin=1in -t latex -o out/cv2015.contract.pdf cv2015.contract.md"
