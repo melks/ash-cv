@@ -14,6 +14,8 @@ git remote add upstream "https://$GH_TOKEN@github.com/bestscarper/ash-cv.git"
 git fetch upstream
 git reset upstream/gh-pages
 
+echo "www.bellesoft.uk" > CNAME
+
 touch .
 
 git add -A .
