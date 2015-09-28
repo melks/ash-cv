@@ -1,4 +1,5 @@
 #!/bin/bash
+# (c) Steve Klabnik
 
 set -o errexit -o nounset
 
