@@ -1,14 +1,16 @@
-# Ashley Hindmarsh - Curriculum Vitae - 5 Apr 2016
+# Ashley Hindmarsh - Curriculum Vitae - October 2016
+# Experienced contract Java and Perl developer.
+
  * 07931 532261
  * ash-jobs@best-scarper.co.uk
  * British Citizen
  * Locations considered: London / Sussex / M23 / remote
+ * Security Clearance: Disclosure Scotland
  * [https://uk.linkedin.com/in/ashleyhindmarsh](https://uk.linkedin.com/in/ashleyhindmarsh)
  * Current CV: [http://www.bellesoft.uk/ash-cv/ashley.hindmarsh.cv.pdf](http://www.bellesoft.uk/ash-cv/ashley.hindmarsh.cv.pdf)
  * References available upon request
 
 ## Summary
- * Experienced Java and Perl developer.
  * Recent, relevant experience in Agile and DevOps environments, continuous integration/delivery (CI/CD) to Cloud platforms.
  * Tech lead on key customer-facing systems for the BBC - the power behind iPlayer.
  * Team lead on the (award-winning) BBC Video Factory portfolio - bringing over a million hours of content to all devices.
@@ -19,7 +21,7 @@
 ### Development
  * _This is indicative of my experience but not exhaustive._
  * General: Object-oriented, with a functional mindset. Focus on using TDD/BDD to drive clean, maintainable code.
- * Java (5+ years): Spring, Camel, Java8 features, concurrency/threading, JMS, TDD/BDD (JUnit, Mockito, Cucumber-JVM),  Servlets, REST (JAX-RS/Jersey), Maven, JAXB, Jackson, Protobuf, Guava, Commons, Hibernate (limited), DropWizard.
+ * Java (5+ years): Oracle Certified Associate, Java SE 8 Programmer. Spring, Camel, Java8 features, concurrency/threading, JMS, TDD/BDD (JUnit, Mockito, Cucumber-JVM),  Servlets, REST (JAX-RS/Jersey), Maven, JAXB, Jackson, Protobuf, Guava, Commons, Hibernate (limited), DropWizard.
  * Perl (10+ years): "Modern Perl" (Moose/Moo, Plack etc), DBIx::Class, Carton, XML, Mason, mod_perl
  * Ruby (2 years for BDD): REST, XML, Sinatra, rvm/rbenv, gem development, bundler
  * Javascript (occasional): Exposure to node.js, JQuery.
@@ -47,15 +49,15 @@
 
 ### Aug 2015-present: Contracting services t/a "Belle Software"
 
-**Lead Software Engineer (SEO)** on-site at Zoopla (Southwark / Nov 2015-present)
+**Senior Software Engineer (SEO)** on-site at Zoopla (Southwark / Nov 2015-present)
 
   * Tasked with re-engineering of SEO support to support long-term transformation from a monolithic site to SOA; includes setting-up a permanent SEO engineering team.
   * Developing internal SEO engineering platform and reporting framework, for a major website which relies hugely on organic SEO traffic.
-  * Perl, Java, HTML/CSS, Javascript, Perl, Google APIs, Google Analytics, AWS Redshift, Birst BI tools.
+  * Perl, Python, Google APIs, Google Analytics, AWS Redshift, Birst BI tools. Some HTML/CSS/Javascript.
 
 **Senior Software Engineer** on-site at Sky (Osterley / Aug-Oct 2015)
 
-  * Working within small Agile teamss, developing services to support both OTT client-facing and back-end APIs.
+  * Working within small Agile teams, developing high-volume Web services to support both OTT client-facing and back-end APIs.
   * Tech: Java, Cassandra, Jersey, AWS+Ansible, Docker, Jenkins, AppDynamics, Graphite+Grafana.
   * Working environment: Agile with Scrum/Kanban, pair programming with TDD/BDD (Java/Ruby).
 
